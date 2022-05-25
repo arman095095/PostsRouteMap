@@ -5,6 +5,7 @@ import PackageDescription
 
 private let dependencies: [Package.Dependency] = [
     .package(url: "https://github.com/arman095095/Module.git", branch: "develop"),
+    .package(url: "https://github.com/arman095095/ModelInterfaces.git", branch: "develop"),
 ]
 
 let package = Package(
@@ -21,6 +22,7 @@ let package = Package(
         // Targets can depend on other targets in this package, and on products in packages this package depends on.
         .target(
             name: "PostsRouteMap",
-            dependencies: [.product(name: "Module", package: "Module")]),
+            dependencies: [.product(name: "Module", package: "Module"),
+                           .product(name: "ModelInterfaces", package: "ModelInterfaces")]),
     ]
 )
