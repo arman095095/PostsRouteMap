@@ -1,6 +1,15 @@
 {
   "pins" : [
     {
+      "identity" : "modelinterfaces",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/arman095095/ModelInterfaces.git",
+      "state" : {
+        "branch" : "develop",
+        "revision" : "9bbf3c6a038ad04c32e212e81c28052e1c4c3599"
+      }
+    },
+    {
       "identity" : "module",
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/arman095095/Module.git",
